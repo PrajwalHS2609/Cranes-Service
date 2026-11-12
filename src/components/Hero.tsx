@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, ArrowRight, ShieldCheck, CheckCircle2, ChevronRight } from 'lucide-react';
-import { COMPANY_CONTACT } from '../data/companyData';
+import { COMPANY_CONTACT, CRANE_IMAGES } from '../data/companyData';
 import { ImageFallback } from './ImageFallback';
 
 interface HeroProps {
@@ -92,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onExploreServices }) =>
           <div className="lg:col-span-5 flex flex-col justify-center">
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900 group h-full min-h-[320px] lg:min-h-[460px]">
               <ImageFallback
-                src="/src/assets/images/hero_crane_operation_1793276863600.jpg"
+                src={CRANE_IMAGES.heroCrane}
                 alt="Sri Shakthi Cranes mobile crane lifting structural steel beam on Bangalore construction site"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />

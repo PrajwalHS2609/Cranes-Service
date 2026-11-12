@@ -1,5 +1,5 @@
 import React from 'react';
-import { COMPANY_CONTACT } from '../data/companyData';
+import { COMPANY_CONTACT, CRANE_IMAGES } from '../data/companyData';
 import { ImageFallback } from './ImageFallback';
 import { ArrowRight, Phone, ShieldCheck, MapPin, CheckCircle2 } from 'lucide-react';
 
@@ -86,7 +86,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-900 aspect-[16/11] relative group">
               <ImageFallback
-                src="/src/assets/images/crane_fleet_yard_1793276864565.jpg"
+                src={CRANE_IMAGES.craneFleetYard}
                 alt="Sri Shakthi Cranes fleet yard in Bangalore"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

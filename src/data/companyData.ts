@@ -1,3 +1,15 @@
+import heroCraneImg from '../assets/images/hero_crane_operation_1793276863600.jpg';
+import hydraulicCraneImg from '../assets/images/hydraulic_crane_lifting_1793276864248.jpg';
+import machineryShiftingImg from '../assets/images/industrial_machinery_shifting_1793276863899.jpg';
+import craneFleetYardImg from '../assets/images/crane_fleet_yard_1793276864565.jpg';
+
+export const CRANE_IMAGES = {
+  heroCrane: heroCraneImg,
+  hydraulicCrane: hydraulicCraneImg,
+  machineryShifting: machineryShiftingImg,
+  craneFleetYard: craneFleetYardImg,
+};
+
 export interface ServiceItem {
   id: string;
   title: string;
@@ -79,7 +91,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Versatile crane hire solutions tailored for construction sites, commercial developments, and industrial infrastructure projects across Bangalore.",
     fullDesc: "Sri Shakthi Cranes provides dependable crane hire options designed to meet the dynamic needs of builders, civil engineering contractors, and industrial managers. Whether you require lifting support for a single day, a specialized shift, or prolonged site execution, our fleet is dispatched with trained operators and rigging coordination. We assist you in identifying the right capacity crane to safely carry out lifting operations without unnecessary rental overhead.",
     category: "General Crane Hire",
-    image: "/src/assets/images/hero_crane_operation_1793276863600.jpg",
+    image: CRANE_IMAGES.heroCrane,
     typicalApplications: [
       "Structural steel erection and truss placement",
       "Precast concrete beam and slab positioning",
@@ -122,7 +134,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Flexible commercial crane rental packages for short-term and contract-based lifting needs with transparent operational terms.",
     fullDesc: "Our crane rental services are structured to provide contractors and manufacturing units with hassle-free access to heavy lifting machinery without capital investment. Sri Shakthi Cranes works closely with site supervisors to review project timelines, lifting schedules, and equipment allocation to ensure minimal idle time and maximum productivity on your worksite.",
     category: "Rental Solutions",
-    image: "/src/assets/images/crane_fleet_yard_1793276864565.jpg",
+    image: CRANE_IMAGES.craneFleetYard,
     typicalApplications: [
       "Weekly and monthly construction project support",
       "Warehouse expansion and structural framework builds",
@@ -161,7 +173,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Heavy-duty hydraulic telescopic cranes delivering smooth fluid control and high load stability for demanding industrial lifts.",
     fullDesc: "Hydraulic cranes offer the ideal combination of responsive hydraulic power, telescopic reach, and smooth load placement. Sri Shakthi Cranes supplies hydraulic cranes capable of handling substantial tonnage while maintaining precise control. This is critical when operating near existing plant equipment, structural columns, or fragile machinery where micro-adjustments are essential.",
     category: "Specialized Lifting",
-    image: "/src/assets/images/hydraulic_crane_lifting_1793276864248.jpg",
+    image: CRANE_IMAGES.hydraulicCrane,
     typicalApplications: [
       "Precision machinery placement onto factory foundations",
       "Heavy transformer and electrical substation installation",
@@ -200,7 +212,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Specialized rigging and crane lifting for CNC machinery, stamping presses, injection molding units, and plant equipment.",
     fullDesc: "Moving sensitive industrial machinery requires more than just raw horsepower; it demands technical rigging expertise, proper load slinging, and low-vibration handling. Based in the heart of Yeshwanthpur Industrial Suburb, Sri Shakthi Cranes has extensive experience maneuvering industrial machines inside workshops, lowering them into factory pits, or lifting them onto elevated mezzanines with absolute care.",
     category: "Machinery Services",
-    image: "/src/assets/images/industrial_machinery_shifting_1793276863899.jpg",
+    image: CRANE_IMAGES.machineryShifting,
     typicalApplications: [
       "CNC milling centers and lathe machine positioning",
       "Plastic injection molding machine unloading and placement",
@@ -239,7 +251,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Engineered lifting solutions for ultra-heavy production units, turbines, rolling mills, and oversized manufacturing assets.",
     fullDesc: "When equipment exceeds standard lifting boundaries, meticulous lift planning becomes paramount. Sri Shakthi Cranes evaluates center of gravity, slinging geometry, ground bearing pressures, and crane load charts before commencing heavy machine lifts. Our team ensures that oversized assets are safely hoisted, rotated, and placed without risk to plant personnel or surrounding structures.",
     category: "Heavy Lifting",
-    image: "/src/assets/images/industrial_machinery_shifting_1793276863899.jpg",
+    image: CRANE_IMAGES.machineryShifting,
     typicalApplications: [
       "Metal forming presses and heavy forging dies",
       "Heavy industrial turbines, alternators, and motors",
@@ -278,7 +290,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Safe and efficient lifting assistance for construction equipment, earthmovers, gensets, cooling towers, and structural assemblies.",
     fullDesc: "Contractors frequently face scenarios where heavy construction plant or building service equipment needs to be lifted onto elevated bridge decks, building roofs, or deep basement shafts. Sri Shakthi Cranes delivers dependable equipment lifting services that keep your project schedule moving without unexpected site bottlenecks.",
     category: "Equipment Services",
-    image: "/src/assets/images/hero_crane_operation_1793276863600.jpg",
+    image: CRANE_IMAGES.heroCrane,
     typicalApplications: [
       "Hoisting mini excavators and skid-steers into basement excavations",
       "Lifting diesel generators (DG sets) onto commercial tower roofs",
@@ -317,7 +329,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Careful material handling and product hoisting for commercial deliveries, raw stock bundles, and prefabricated components.",
     fullDesc: "For commercial operations receiving heavy pallets, glass facades, structural steel rebar bundles, or bulky industrial components that cannot be handled by manual labor or standard forklifts, Sri Shakthi Cranes provides responsive product lifting services. We unload flatbeds quickly and hoist cargo directly to the required assembly tier.",
     category: "Material Handling",
-    image: "/src/assets/images/hydraulic_crane_lifting_1793276864248.jpg",
+    image: CRANE_IMAGES.hydraulicCrane,
     typicalApplications: [
       "Unloading heavy flatbed trailers and transport trucks",
       "Hoisting architectural glass crates and stone slabs",
@@ -356,7 +368,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "Highly mobile truck-mounted and rough-terrain cranes ideal for projects requiring swift relocation between multiple lifting points.",
     fullDesc: "Mobile cranes are the backbone of urban construction and industrial maintenance. Sri Shakthi Cranes maintains a versatile fleet of mobile cranes that can travel smoothly across Bangalore's road network, set up outriggers rapidly, execute planned lifts, and move swiftly to the next working point on large job sites.",
     category: "Mobile Fleet",
-    image: "/src/assets/images/crane_fleet_yard_1793276864565.jpg",
+    image: CRANE_IMAGES.craneFleetYard,
     typicalApplications: [
       "Metro rail construction and civil flyover works",
       "Roadway sign gantry and high-mast light pole installation",
@@ -395,7 +407,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: "High-rise construction tower crane rental arrangements and coordination for tall commercial and residential building projects.",
     fullDesc: "For vertical construction projects reaching multiple stories, tower cranes provide continuous material hoisting across the entire building footprint. Sri Shakthi Cranes coordinates tower crane rental arrangements, assisting project developers with capacity planning, foundation anchorage considerations, and operational availability for long-term project timelines.",
     category: "High-Rise Solutions",
-    image: "/src/assets/images/hero_crane_operation_1793276863600.jpg",
+    image: CRANE_IMAGES.heroCrane,
     typicalApplications: [
       "Multi-story residential apartment towers",
       "Commercial IT office park construction",
@@ -539,7 +551,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: "Mobile Crane",
     location: "Bangalore Urban Site",
     description: "Precision lifting of structural steel truss modules for commercial building infrastructure.",
-    image: "/src/assets/images/hero_crane_operation_1793276863600.jpg"
+    image: CRANE_IMAGES.heroCrane
   },
   {
     id: "gal-2",
@@ -548,7 +560,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: "Hydraulic Lifting",
     location: "Logistics Center, Yeshwanthpur",
     description: "Heavy precision industrial machine module lifted from transport flatbed onto loading dock.",
-    image: "/src/assets/images/hydraulic_crane_lifting_1793276864248.jpg"
+    image: CRANE_IMAGES.hydraulicCrane
   },
   {
     id: "gal-3",
@@ -557,7 +569,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: "Machinery Lifting",
     location: "Peenya Industrial Area",
     description: "Slinging and internal factory placement of multi-axis CNC milling center on reinforced foundation.",
-    image: "/src/assets/images/industrial_machinery_shifting_1793276863899.jpg"
+    image: CRANE_IMAGES.machineryShifting
   },
   {
     id: "gal-4",
@@ -566,7 +578,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: "Crane Fleet",
     location: "Bangalore Equipment Yard",
     description: "Modern commercial crane fleet ready for rapid mobilization to industrial worksites.",
-    image: "/src/assets/images/crane_fleet_yard_1793276864565.jpg"
+    image: CRANE_IMAGES.craneFleetYard
   },
   {
     id: "gal-5",
@@ -575,7 +587,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: "Construction Projects",
     location: "Commercial Complex, Outer Ring Road",
     description: "Rigid outrigger stabilization and load monitoring during structural beam hoisting.",
-    image: "/src/assets/images/hero_crane_operation_1793276863600.jpg"
+    image: CRANE_IMAGES.heroCrane
   },
   {
     id: "gal-6",
@@ -584,7 +596,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: "Heavy Machinery",
     location: "Manufacturing Hub, Bidadi",
     description: "Synchronized hydraulic rigging and machine transfer during plant line expansion.",
-    image: "/src/assets/images/industrial_machinery_shifting_1793276863899.jpg"
+    image: CRANE_IMAGES.machineryShifting
   }
 ];
 
